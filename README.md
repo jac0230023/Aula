@@ -1,2 +1,2 @@
 # Aula
-Repositorio destinado para exercicios e avaliaçoes.
+Repositorio destinado a exercicios e avaliaçoes.
