@@ -12,19 +12,31 @@ public class AV1 {
 		String nomePiorAluno = "";
 				
 		
-		for (int qtdAluno = 2; qtdAluno != 0; qtdAluno--) {
+		for (int qtdAluno = 10; qtdAluno != 0; qtdAluno--) {
 			
 			System.out.print("Nome do Aluno: ");
 			String nomeAluno = scan.nextLine();
 			double somaMedia = 0;
+			
+			
 			for (int i = 1; i < 5; i++) {
-				System.out.printf("%d° Nota: ", i);
-				double nota = scan.nextDouble();
-				
-				somaMedia += nota;
+			    double nota;
+			    
+			    while (true) {
+				    System.out.printf("%d° Nota: ", i);
+				    nota = scan.nextDouble();
+				    
+				    if (nota >= 0 && nota <= 10){
+				        break;
+				    } else {
+				        System.out.println("Nota Invalia! Insira um valor entre 0 a 10.");
+				    }
+			    }
+			    somaMedia += nota;
 				media = nota;
 				scan.nextLine();
 			}
+			
 		media = somaMedia / 4;
 			
 		if (media > 0 && media < 5) {
