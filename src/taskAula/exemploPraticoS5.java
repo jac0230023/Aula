@@ -16,6 +16,7 @@ public class exemploPraticoS5 {
 			System.out.print("Nome: ");
 			System.out.println(name);
 		}
+		input.close();
 	}
 
 }
